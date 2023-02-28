@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block title_block %}
+    Thank_you
+{% endblock %}
+
+
+{% block body_block %}
+    {% if a<=50 %} <!-- here you will get TypeError if you dont convert age to integer.-->
+            
+    <h1> Thank you for registering with us.</h1>
+
+    <p>
+    These are your details <br/>
+    Name: {{ n }} <br/>
+    Age: {{ a }}
+    </p>
+
+    {% else %}
+    <h1> {{ n }}, Please get out of here.</h1>
+
+    {% endif %}
+{% endblock %}
+
+

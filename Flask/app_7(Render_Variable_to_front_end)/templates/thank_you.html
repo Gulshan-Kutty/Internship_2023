@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank_you</title>
+</head>
+<body>
+    <nav>
+        <a href="{{url_for('index_function')}}"> Home</a>
+        <a href="{{url_for('contact_function')}}"> Contact Us</a>
+    </nav>
+
+
+    <h1> Thank you for registering with us.</h1>
+
+    <p>
+        These are your details <br/>
+        Name: {{ n }} <br/> <!-- we used Jinja Templating syntax here so that we can render this variables to frontend-->
+        Age: {{ a }} <!-- we used Jinja Templating syntax here so that we can render this variables to frontend-->
+    </p>
+
+    
+</body>
+</html>
