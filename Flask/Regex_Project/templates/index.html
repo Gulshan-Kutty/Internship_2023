@@ -17,11 +17,20 @@
         <button> Submit </button>
     </form>
     <!-- Displaying Variables on the frontend-->
-    <p>For String = {{t}} and Regex = {{reg}}<br/>  
-    Total_matches :- {{ c }}<br>
-    Matches :- {{r}}</p>
-    
+    <h2>For String = {{t}} and Regex = {{reg}}</h2> 
    
-    </div>
+
+    {% if count>0 %}
+    <h2> Total Matches = {{count}} </h2>
+    <h2> Matches: </h2>
+    {% for match in matches %}
+        {{match}}<br>
+    {% endfor %}
+    {% elif count==-1 %}
+    {% else %}
+    <h2> Total Matches = {{count}} </h2>
+    {% endif %}
+
+    
 </body>
 </html>
