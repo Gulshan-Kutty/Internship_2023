@@ -4,12 +4,13 @@
     <title>RegEX</title>
 </head>
 <body>
-    
-    <h1>Welcome to Regex</h1>
+    <style> div {text-align: center;} </style>
+<div>
+    <h1>Welcome to Regex Application</h1>
 
     <form action = "" method="post">
         <label>String</label><br>
-        <input type="text" name="txt" placeholder="Enter String"><br><br>
+        <textarea name="txt" placeholder="Enter String"></textarea><br><br>
 
         <label>Regex</label><br>
         <input type='text' name="reg_exp" placeholder="Enter Regex"><br><br>
@@ -26,11 +27,11 @@
     {% for match in matches %}
         {{match}}<br>
     {% endfor %}
-    {% elif count==-1 %}
+    {% elif count == -1 %}
     {% else %}
-    <h2> Total Matches = {{count}} </h2>
+    <h2> No Match Found!!! </h2>
     {% endif %}
-
+</div>
     
 </body>
 </html>
